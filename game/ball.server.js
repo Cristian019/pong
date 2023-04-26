@@ -3,7 +3,7 @@ class Ball {
     this.x = x;
     this.y = y;
     this.radius = 10;
-    this.speed = 10;
+    this.speed = (Math.random()< 0.5 ? -1 : 1)+10;
     this.dx = this.speed;
     this.dy = this.speed;
     this.color = "#" + Math.floor(Math.random() * 16777215).toString(16);
